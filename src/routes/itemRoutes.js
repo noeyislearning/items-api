@@ -16,7 +16,7 @@ router.get("/items", getAllItems);
 router.get("/item/:id", getItemById);
 
 // POST a new item
-router.post("/items", createItem);
+router.post("/item", createItem);
 
 // PUT update an existing item by ID
 router.put("/item/:id", updateItem);

@@ -69,6 +69,12 @@ Develop an efficient RESTful API for managing a collection of items, such as a p
   
   - Rate limiting
 
+- The API has the following error handling:
+
+  - `400` - Bad Request
+  - `404` - Not Found
+  - `500` - Internal Server Error
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

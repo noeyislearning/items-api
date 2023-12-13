@@ -41,6 +41,8 @@ Develop an efficient RESTful API for managing a collection of items, such as a p
 
 ## Usage
 
+For Postman documentation, please refer to the following link: **[Items API](https://www.postman.com/noeyislearning/workspace/assessments/collection/28333800-50c9ecb3-f22a-452d-a0e4-95fafa9a6a08?action=share&creator=28333800)**
+
 - The API has the following endpoints:
 
   - `GET /items` - Returns a list of all items in the database.

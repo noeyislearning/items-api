@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
-// import rateLimit from "express-rate-limit";
+import rateLimit from "express-rate-limit";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -15,12 +15,12 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// // Rate limiting
-// const limiter = rateLimit({
-//   windowMs: 1 * 60 * 1000, // 1 minute
-//   max: 60, // 60 requests
-// });
-// app.use(limiter);
+// Rate limiting
+const limiter = rateLimit({
+  windowMs: 1 * 60 * 1000, // 1 minute
+  max: 60, // 60 requests
+});
+app.use(limiter);
 
 // Connect to MongoDB using Mongoose
 mongoose.connect(process.env.MONGODB_URI, {});

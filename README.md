@@ -23,8 +23,15 @@ Develop an efficient RESTful API for managing a collection of items, such as a p
   ```bash
   npm install
   ```
+  
+- Create a `.env` file in the root directory and add the following environment variables:
 
-- After installation, run the following command to start the application locally:
+  ```bash
+  PORT=8080
+  MONGO_URI=<your_mongodb_uri>
+  ```
+
+- Then run the following command to start the application locally:
 
   ```bash
   npm run server:dev

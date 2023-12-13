@@ -23,8 +23,15 @@ Develop an efficient RESTful API for managing a collection of items, such as a p
   ```bash
   npm install
   ```
+  
+- Create a `.env` file in the root directory and add the following environment variables:
 
-- After installation, run the following command to start the application locally:
+  ```bash
+  PORT=8080
+  MONGO_URI=<your_mongodb_uri>
+  ```
+
+- Then run the following command to start the application locally:
 
   ```bash
   npm run server:dev
@@ -41,6 +48,26 @@ Develop an efficient RESTful API for managing a collection of items, such as a p
   - `POST /item` - Creates a new item in the database.
   - `PUT /item/:id` - Updates an item with the specified ID.
   - `DELETE /item/:id` - Deletes an item with the specified ID.
+
+- The API has the following data model:
+
+  ```json
+  {
+    "name": "New Product",
+    "price": 10.99,
+    "quantity": 50
+  }
+  ```
+
+- The API has the following validation rules:
+
+  - `name` is required and must be a string.
+  - `price` is required and must be a number.
+  - `quantity` is required and must be a number.
+
+- Added feature:
+  
+  - Rate limiting
 
 ## License
 

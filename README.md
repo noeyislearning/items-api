@@ -49,6 +49,26 @@ Develop an efficient RESTful API for managing a collection of items, such as a p
   - `PUT /item/:id` - Updates an item with the specified ID.
   - `DELETE /item/:id` - Deletes an item with the specified ID.
 
+- The API has the following data model:
+
+  ```json
+  {
+    "name": "New Product",
+    "price": 10.99,
+    "quantity": 50
+  }
+  ```
+
+- The API has the following validation rules:
+
+  - `name` is required and must be a string.
+  - `price` is required and must be a number.
+  - `quantity` is required and must be a number.
+
+- Added feature:
+  
+  - Rate limiting
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
